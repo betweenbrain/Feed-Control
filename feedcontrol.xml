@@ -18,16 +18,14 @@
 	</files>
 
 	<languages>
-		<language tag="en-GB">language/en-GB/en-GB.plg_feed_control.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_feedcontrol.ini</language>
 	</languages>
 
 	<params addpath="/plugins/system/elements">
-		<param type="menuitems"/>
-		<param name="container"
-		       type="text"
-		       default="#k2Container"
-		       label="Containing Element"
-		       description="The element that surrounds the items you will be loading more of."/>
+		<param name="exclusions"
+		       type="menuitems"
+		       label="PLG_FEED_CONTROL_EXCLUSIONS_LABEL"
+		       description="PLG_FEED_CONTROL_EXCLUSIONS_DESC"/>
 	</params>
 
 </install>
