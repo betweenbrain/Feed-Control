@@ -22,6 +22,10 @@
 	</languages>
 
 	<params addpath="/plugins/system/elements">
+		<param name="permanent" type="radio" default="1" label="PLG_FEED_CONTROL_PERMANENT_LABEL" description="PLG_FEED_CONTROL_PERMANENT_DESC">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</param>
 		<param name="exclusions"
 		       type="menuitems"
 		       label="PLG_FEED_CONTROL_EXCLUSIONS_LABEL"

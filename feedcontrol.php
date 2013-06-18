@@ -18,10 +18,17 @@ class plgSystemFeedcontrol extends JPlugin {
 
 		if ($this->checkContext() == TRUE) {
 
-			$app = JFactory::getApplication();
+			$app       = JFactory::getApplication();
+			$permanent = $this->params->get('permanent');
 
 			if (JRequest::getVar('format') == "feed") {
-				$app->redirect(juri::current());
+				$current = str_replace('index.php', '', juri::current());
+
+				if ($permanent == 1) {
+					header('HTTP/1.1 301 Moved Permanently');
+				}
+
+				$app->redirect($current);
 			}
 		}
 	}
