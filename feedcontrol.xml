@@ -4,13 +4,13 @@
          group="system"
          method="upgrade">
 	<name>System - Feed Control</name>
-	<creationDate>June 20, 2013</creationDate>
+	<creationDate>July 2, 2013</creationDate>
 	<author>Matt Thomas</author>
 	<authorEmail>matt@betweenbrain.com</authorEmail>
 	<authorUrl>http://www.betweenbrain.com</authorUrl>
 	<license>GNU General Public License version 2 or later</license>
 	<copyright>Copyright (C) 2013 betweenbrain llc. All rights reserved.</copyright>
-	<version>0.1</version>
+	<version>1.5.0</version>
 	<description>PLG_FEED_CONTROL_DESC</description>
 	<files>
 		<filename plugin="feedcontrol">feedcontrol.php</filename>
