@@ -16,10 +16,10 @@ class JElementMenuitems extends JElement {
 	function fetchElement($name, $value, &$node, $control_name) {
 		$site = str_replace('/administrator', '', JPATH_BASE);
 		JLoader::register('JHTMLMenu', $site . '/libraries/joomla/html/html/menu.php', TRUE);
-		$items   = JHTMLMenu::linkoptions();
+		$options = JHTMLMenu::linkoptions();
 		$attribs = 'multiple="true" size="12"';
 
-		return JHTML::_('select.genericlist', $items, $control_name . '[' . $name . '][]', $attribs, 'value', 'text', $value, $control_name . $name);
+		return JHTML::_('select.genericlist', $options, $control_name . '[' . $name . '][]', $attribs, 'value', 'text', $value, $control_name . $name);
 	}
 }
 
